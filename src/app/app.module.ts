@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from   '@angular/router';
-
-import {ROUTES} from './app-routes';
+import {HttpModule} from '@angular/http';
+import {ROUTES} from './app.routes';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -23,7 +23,7 @@ import { SobreComponent } from './sobre/sobre.component';
     SobreComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
